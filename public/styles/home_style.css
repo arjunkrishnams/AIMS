@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+.newflex{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+section{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: url(bg.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header{
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo{
+  position: relative;
+  color: #000;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+header .navigation a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+header .navigation a{
+  margin-right: 30px;
+  background: #818181;
+}
+
+
+header .navigation a:hover{
+  background: #226A80;
+}
+
+
+
+.content{
+  max-width: 650px;
+  margin: 60px 100px;
+}
+
+.content .info h2{
+  color: #226A80;
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+.content .info h2 span{
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.content .info p{
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.content .info-btn{
+  color: #fff;
+  background: #226A80;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.content .info-btn:hover{
+  background: #0C4F60;
+}
+
+.media-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.media-icons a{
+  position: relative;
+  color: #111;
+  font-size: 25px;
+  transition: 0.3s;
+  transition-property: transform;
+}
+
+.media-icons a:not(:last-child){
+  margin-right: 60px;
+}
+
+.media-icons a:hover{
+  transform: scale(1.5);
+}
+
+label{
+  display: none;
+}
+
+#check{
+  z-index: 3;
+  display: none;
+}
+
+/* Responsive styles */
+
+@media (max-width: 960px){
+  header .navigation{
+    display: none;
+  }
+
+  label{
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: color;
+  }
+
+  label:hover{
+    color: #fff;
+  }
+
+  label .close-btn{
+    display: none;
+  }
+
+  #check:checked ~ header .navigation{
+    z-index: 2;
+    position: fixed;
+    background: rgba(114, 223, 255, 0.9);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #check:checked ~ header .navigation a{
+    font-weight: 700;
+    margin-right: 0;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+  }
+
+  #check:checked ~ header label .menu-btn{
+    display: none;
+  }
+
+  #check:checked ~ header label .close-btn{
+    z-index: 2;
+    display: block;
+    position: fixed;
+  }
+
+  label .menu-btn{
+    position: absolute;
+  }
+
+  header .logo{
+    position: absolute;
+    bottom: -6px;
+  }
+
+  .content .info h2{
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .content .info h2 span{
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .content .info p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 560px){
+  .content .info h2{
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .content .info h2 span{
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .content .info p{
+    font-size: 14px;
+  }
+}
+      
+
+
+body, table, input, select, textarea {
+
+}
+
+
+.graph {
+  background-color: #fff;
+  border-radius: 20px;
+  /* border: #fff solid 4rem; */
+  /* border-bottom: #fff 3rem ; */
+  padding: 6rem 2rem;
+	margin-bottom:1em;
+  font:normal 100%/150% Georgia,serif;
+}
+
+.graph caption {
+	font:bold 150%/120% Georgia,serif;
+  color: #005c78;
+	padding-bottom:0.33em;
+  font-size:1.5rem;
+}
+
+.graph tbody th {
+	text-align:right;
+  /* size-adjust: 1.5; */
+}
+
+@supports (display:grid) {
+
+	@media (min-width:32em) {
+
+		.graph {
+			display:block;
+      width:800px;
+      height:600px;
+
+		}
+
+		.graph caption {
+			display:block;
+		}
+
+		.graph thead {
+			display:none;
+		}
+
+		.graph tbody {
+			position:relative;
+			display:grid;
+			grid-template-columns:repeat(auto-fit, minmax(2em, 1fr));
+			column-gap:2.5%;
+			align-items:end;
+			height:300px;
+			margin:3em 0 1em 2.8em;
+			padding:0 1em;
+			border-bottom:2px solid rgba(0,0,0,0.5);
+			background:repeating-linear-gradient(
+				180deg,
+				rgba(170,170,170,0.7) 0,
+				rgba(170,170,170,0.7) 1px,
+				transparent 1px,
+				transparent 20%
+			);
+		}
+
+		.graph tbody:before,
+		.graph tbody:after {
+			position:absolute;
+			left:-3.2em;
+			width:2.8em;
+			text-align:right;
+			font:bold 80%/120% Georgia,serif;
+		}
+
+		.graph tbody:before {
+			content:"100%";
+			top:-0.6em;
+		}
+
+		.graph tbody:after {
+			content:"0%";
+			bottom:-0.6em;
+		}
+
+		.graph tr {
+			position:relative;
+			display:block;
+		}
+
+		.graph tr:hover {
+			z-index:999;
+		}
+
+		.graph th,
+		.graph td {
+			display:block;
+			text-align:center;
+		}
+
+		.graph tbody th {
+			position:absolute;
+			top:-3em;
+			left:0;
+			width:100%;
+			font-weight:normal;
+			text-align:center;
+      white-space:nowrap;
+			text-indent:0;
+			transform:rotate(-45deg);
+		}
+
+		.graph tbody th:after {
+			content:"";
+		}
+
+		.graph td {
+			width:100%;
+			height:100%;
+			background:#F63;
+			border-radius:0.5em 0.5em 0 0;
+			transition:background 0.5s;
+		}
+
+		.graph tr:hover td {
+			opacity:0.7;
+		}
+
+		.graph td span {
+			overflow:hidden;
+			position:absolute;
+			left:50%;
+			top:50%;
+			width:0;
+			padding:0.5em 0;
+			margin:-1em 0 0;
+			font:normal 85%/120% Georgia,serif;
+/* 			background:white; */
+/* 			box-shadow:0 0 0.25em rgba(0,0,0,0.6); */
+			font-weight:bold;
+      font-size: 1.5rem;
+			opacity:0;
+			transition:opacity 0.5s;
+      color:white;
+		}
+
+		.toggleGraph:checked + table td span,
+		.graph tr:hover td span {
+			width:4em;
+			margin-left:-2em; /* 1/2 the declared width */
+			opacity:1;
+		}
+
+
+
+    
+
+
+	} /* min-width:32em */
+
+} /* grid only */

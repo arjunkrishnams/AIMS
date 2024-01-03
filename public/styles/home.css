@@ -1,0 +1,20 @@
+.newdiv{
+    height: 100vh;
+    background-image: url("../public/images/manwithmac.jpg");
+    background-size: cover;
+    background-color: black; /* Added background color */
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black; /* Added background color */
+}
+
+.center-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

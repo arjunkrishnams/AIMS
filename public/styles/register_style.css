@@ -1,0 +1,22 @@
+
+.form-wrapper {
+    position: absolute;
+    top: 50%;
+    border-radius: 20px;
+    margin-top: 10rem;
+    margin-left: 5rem;
+
+    padding: 70px;
+    width: 450px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .75);
+}
+
+body {
+    background-image: url(../images/manwithmac.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin : 0px;
+    color:white;
+  }

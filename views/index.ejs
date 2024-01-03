@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search for details</title>
+  <!-- <link rel="stylesheet" href="/styles/main.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/card_style.css">
+  <link rel="stylesheet" href="/styles/search_style.css">
+</head>
+
+<body id="app" >
+
+      <!-- <form class="container" action="/search" method="post">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" name="searchQuery" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
+      </form> -->
+
+      <!-- <form action="/search" method="POST">
+        <div class="form-group">
+            <label for="searchType">Search for:</label>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="searchAlumni" name="searchType" value="alumni" checked>
+                <label class="form-check-label" for="searchAlumni">Alumni</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="searchCompany" name="searchType" value="company">
+                <label class="form-check-label" for="searchCompany">Company</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="searchQuery">Search Query:</label>
+            <input type="text" class="form-control" id="searchQuery" name="searchQuery" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form> -->
+    <div class="form-wrapper">
+      <form action="/search" method="POST">
+    <div class="search-box">
+      
+      <button class="btn-search"><i class="fas fa-search"></i></button>
+      <input type="text" class="input-search" placeholder="Type to Search..." id="searchQuery" name="searchQuery" required>
+    </div>
+    <div class="form-group">
+      <label for="searchType">Search for:</label>
+      <div class="form-check">
+          <input type="radio" class="form-check-input" id="searchAlumni" name="searchType" value="alumni" checked>
+          <label class="form-check-label" for="searchAlumni">Alumni</label>
+      </div>
+      <div class="form-check">
+          <input type="radio" class="form-check-input" id="searchCompany" name="searchType" value="company">
+          <label class="form-check-label" for="searchCompany">Company</label>
+      </div>
+      </div>
+      <button class="button-27" type="submit">Search</button>
+      
+
+    </form> 
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="container">
+      <button class="btn btn-primary" onclick="window.location.href = '/'">Logout</button>
+  </div>
+
+  </div>
+    
+  </div>
+  
+    <br/>
+    
+    
+    
+
+    <!-- <form class="container" action="/search" method="post">
+      <label for="searchInput">Search:</label>
+      <input type="text" id="searchInput"  placeholder="Enter your search query">
+      <button type="submit">Search</button>
+    </form>   -->
+  
+    <br/>
+<% if (status === "none") { %>
+    <h1>Search for Details</h1>
+    <% } else if( status == "alumni") { %>
+
+
+    <div class="ag-format-container">
+      <div class="ag-courses_box">
+
+        <% question.forEach(function(user) { %>
+        <div class="ag-courses_item">
+          <a href="/company/alumni?alumniname=<%= user.alumniname%>" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              <%= user.alumniname %>  <%= user.company %>&#160;
+            </div>
+    
+            <div class="ag-courses-item_date-box">
+              YearofGrad:
+              <span class="ag-courses-item_date">
+                <%= user.yearofgrad %>
+              </span>
+            </div>
+            <div class="ag-courses-item_date-box">
+              Department:
+              <span class="ag-courses-item_date">
+                <%= user.department %>
+              </span>
+            </div>
+            <div class="ag-courses-item_date-box">
+              PhoneNumber:
+              <span class="ag-courses-item_date">
+                <%= user.phonenumber %>
+              </span>
+            </div>
+            <div class="ag-courses-item_date-box">
+              Email:
+              <span class="ag-courses-item_date">
+                <%= user.email %>
+              </span>
+            </div>
+          </a>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  <% } else if(status === "company") {%>
+    <div class="ag-format-container">
+      <div class="ag-courses_box">
+
+        <% question.forEach(function(user) { %>
+        
+        <div class="ag-courses_item">
+          <a href="/company?companyname=<%= user.companyname %>" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              <%= user.companyname %> 
+            </div>
+    
+            <div class="ag-courses-item_date-box">
+              Sector:
+              <span class="ag-courses-item_date">
+                <%= user.sector %>
+              </span>
+            </div>
+            <div class="ag-courses-item_date-box">
+              Rating:
+              <span class="ag-courses-item_date">
+                <%= parseInt(average) %>
+              </span>
+            </div>
+          </a>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  <% } %>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

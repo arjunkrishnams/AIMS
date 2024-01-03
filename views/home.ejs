@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+
+
+  
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/home_style.css">
+  <!-- <link rel="stylesheet" href="/styles/chart_style.css"> -->
+</head>
+
+
+  <body>
+    <section>
+      <header>
+        <h2><a href="#" class="logo">AIMS</a></h2>
+        <div class="navigation">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="/login">Login/Register</a>
+
+          
+          <!-- <a href="#">Services</a> -->
+        </div>
+      </header>
+      <div class="content">
+        <div class="info">
+          <h2>Alumni Information Management System <br><span>Find your alumni!</span></h2>
+          <a href="#statistics" class="info-btn" onclick="scroll">More Info</a>
+        </div>
+      </div>
+    </section>
+    <section id="statistics">
+    <div class="newflex">
+    <table class="graph">
+      <caption>Company statistics</caption>
+      <thead>
+        <tr>
+          <th scope="col">Item</th>
+          <th scope="col">Percent</th>
+        </tr>
+      </thead><tbody class="horizontal">
+        <% details.forEach(function(d){ %>
+          <% let percentage = d.count*10 + "%" %>
+        <tr style="height: <%= percentage %>">
+          <th scope="row"><%= d.companyname %></th>
+          <td><span><%= d.count %></span></td>
+        </tr>
+        <% }) %>
+     </tbody>
+    </table>
+    </div>
+  </section>
+  </body>
+</html>

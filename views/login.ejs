@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Login Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Welcome Back!</h1>
+		<p>Login with your credentials to continue.</p>
+		<span>
+			<p>Don't have an account?</p>
+			<a href="/register/student">Register as student</a>
+			<a href="/register/alumni">Register as Alumni</a>
+		</span>
+		</div>
+	</div>
+	
+	
+		<div class="right">
+		<h5>Login</h5>
+		<p>Use your approved credentials to login and continue!</p>
+		<div class="inputs">
+    <form action="/login" method="POST">      
+			<input type="text" id="username" placeholder="username" name="username" required>
+
+			<br>
+			<input type="password" id="password" placeholder="password" name="password" required>
+
+		</div>
+			
+			<br><br>
+			
+		<div class="remember-me--forget-password">
+				<!-- Angular -->
+    </div>  
+			<button type="submit" >Login</button>
+    </form>
+	
+	
+</div>
+<!-- partial -->
+  
+</body>
+</html>

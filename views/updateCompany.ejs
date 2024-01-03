@@ -1,0 +1,64 @@
+<!-- FILEPATH: /c:/Users/arjun/Downloads/World+Capital+Quiz/World Capital Quiz/views/alumni.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Company</title>
+    <link rel="stylesheet" href="/styles/updateCompany_style.css">
+</head>
+<body>
+    <nav>
+        <!-- <a href="#"><img src="images/logo.svg" alt="logo"></a> -->
+        <!-- <h2>AIMS</h2> -->
+    </nav>
+    <div class="form-wrapper">
+        <h2 style="margin-top: 200px; text-align: center;">Update Company</h2>
+        <form action="/alumni/updateCompany" method="POST">
+            <div class="form-control">
+                <input type="text" name = "username" id = "username" required>
+                <label>Username</label>
+            </div>
+            <div class="form-control">
+                <input type="password" name = "password" id = "password" required>
+                <label>Password</label>
+            </div>
+            <div class="form-control">
+                <input type="text" required name = "companyname" id = "companyname">
+                <label>Company Name</label>
+            </div>
+            <div class="form-control">
+                <input type="text" name = "sector" id = "sector" required>
+                <label>Sector</label>
+            </div>
+            <div class="form-control">
+                <input type="text" name = "rating" id = "rating" required>
+                <label>Rating(Integer between 1 and 5)</label>
+            </div>
+            <div class="form-control">
+                <input type="text" name = "role" id = "role" required>
+                <label>Role</label>
+            </div>  
+            <div class="form-control">
+                <input type="text"  name = "experience" id = "experience"  required>
+                <label>Experience (Number of Years)</label>
+            </div>
+            <div class="form-control">
+                <input type="text" name = "location" id = "username" required>
+                <label>Location</label>
+            </div>
+            <div class="form-control">
+                <input type="text" name = "currentlyworking" id= "currentlyworking" required>
+                <label>Currently Working?(Y or N)</label>
+            </div>  
+
+            <button type="submit">Submit</button>
+         
+        </form>
+        <p>Have you done Masters? <a href="updateUniversity">Add University</a></p>
+        
+    </div>
+</body>
+</html>

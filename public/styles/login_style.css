@@ -1,0 +1,452 @@
+.login {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .login .div {
+    background-color: #ffffff;
+    width: 1600px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .login .right {
+    position: absolute;
+    width: 453px;
+    height: 575px;
+    top: 222px;
+    left: 901px;
+  }
+  
+  .login .frame {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .login .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #2f3367;
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .login .div-wrapper {
+    position: absolute;
+    top: 54px;
+    left: 5px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .login .p {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #303468;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .login .group {
+    position: absolute;
+    width: 443px;
+    height: 64px;
+    top: 122px;
+    left: 5px;
+    background-color: #f5f5f7;
+    border-radius: 10px;
+  }
+  
+  .login .iconly-bold-profile {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 20px;
+    left: 17px;
+  }
+  
+  .login .frame-2 {
+    position: absolute;
+    top: 20px;
+    left: 59px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .login .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8fa8;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .login .next-BTN {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18.5px;
+    position: absolute;
+    top: 417px;
+    left: 272px;
+    background-color: #007dfa;
+    border-radius: 8px;
+    all: unset;
+    box-sizing: border-box;
+  }
+  
+  .login .next-icon {
+    display: flex;
+    width: 139px;
+    align-items: flex-start;
+    gap: 57px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .login .next {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .login .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .login .icon {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-right: -2px;
+  }
+  
+  .login .chevron-right {
+    position: relative;
+    width: 33px;
+    height: 33px;
+  }
+  
+  .login .group-2 {
+    position: absolute;
+    width: 443px;
+    height: 54px;
+    top: 521px;
+    left: 5px;
+  }
+  
+  .login .frame-3 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .login .text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #393d6e;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .login .frame-4 {
+    position: absolute;
+    top: 30px;
+    left: 267px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .login .text-wrapper-5 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #007dfa;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .login .line {
+    position: absolute;
+    width: 443px;
+    height: 1px;
+    top: -1px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .login .overlap-group-wrapper {
+    position: absolute;
+    width: 453px;
+    height: 80px;
+    top: 207px;
+    left: 0;
+  }
+  
+  .login .overlap-group {
+    position: relative;
+    width: 456px;
+    height: 82px;
+    left: -2px;
+  }
+  
+  .login .frame-5 {
+    position: absolute;
+    top: 0;
+    left: 24px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .login .text-wrapper-6 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #3c4071;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .login .frame-6 {
+    position: absolute;
+    top: 30px;
+    left: 66px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .login .text-wrapper-7 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #3c4071;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .login .rectangle {
+    position: absolute;
+    width: 456px;
+    height: 76px;
+    top: 6px;
+    left: 0;
+  }
+  
+  .login .mobile-light-solid {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: 34px;
+    left: 26px;
+  }
+  
+  .login .group-3 {
+    position: absolute;
+    width: 443px;
+    height: 64px;
+    top: 315px;
+    left: 5px;
+    background-color: #f5f5f7;
+    border-radius: 10px;
+  }
+  
+  .login .envelope-light-solid {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 22px;
+    left: 19px;
+  }
+  
+  .login .left {
+    position: absolute;
+    width: 655px;
+    height: 1024px;
+    top: 0;
+    left: 0;
+    background-image: url(./img/unsplash-e2i7hftb-ri.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .login .menu {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    position: absolute;
+    top: 72px;
+    left: 94px;
+  }
+  
+  .login .align-justify {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .login .frame-7 {
+    position: relative;
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .login .text-wrapper-8 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 38px;
+    white-space: nowrap;
+  }
+  
+  .login .logo-social-login {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 364px;
+    position: absolute;
+    top: 472px;
+    left: 226px;
+  }
+  
+  .login .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 17px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .login .vector {
+    position: relative;
+    width: 42.14px;
+    height: 41px;
+  }
+  
+  .login .name {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .login .text-wrapper-9 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 38px;
+    letter-spacing: 0.38px;
+    line-height: normal;
+  }
+  
+  .login .social-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .login .social-media-logo {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 11.33px;
+    padding: 6.8px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    border-radius: 21.53px;
+  }
+  
+  .login .subtract-wrapper {
+    display: flex;
+    width: 20.4px;
+    height: 20.4px;
+    align-items: center;
+    justify-content: center;
+    gap: 11.33px;
+    position: relative;
+  }
+  
+  .login .subtract {
+    position: relative;
+    width: 7.93px;
+    height: 14.73px;
+  }
+  
+  .login .img {
+    position: relative;
+    width: 13.6px;
+    height: 13.6px;
+  }
+  
+  .login .subtract-2 {
+    position: relative;
+    width: 11.33px;
+    height: 10.2px;
+  }
